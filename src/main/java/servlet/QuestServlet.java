@@ -1,16 +1,21 @@
+package servlet;
+
+import other.Question;
+import service.QuestService;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.*;
 
 @WebServlet("/game")
-public class Servlet extends HttpServlet {
-    private Service gameService;
+public class QuestServlet extends HttpServlet {
+    private QuestService gameService;
 
     @Override
     public void init() throws ServletException {
         super.init();
-        gameService = new Service();
+        gameService = new QuestService();
     }
 
     @Override

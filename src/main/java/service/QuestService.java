@@ -1,3 +1,7 @@
+package service;
+
+import other.Answer;
+import other.Question;
 import lombok.Getter;
 import org.apache.commons.io.IOUtils;
 
@@ -10,11 +14,11 @@ import java.util.List;
 import java.util.Map;
 
 @Getter
-public class Service {
+public class QuestService {
 
     private final List<Question> questions;
 
-    public Service() {
+    public QuestService() {
         questions = new ArrayList<>();
         loadQuestionsAndAnswers();
     }
