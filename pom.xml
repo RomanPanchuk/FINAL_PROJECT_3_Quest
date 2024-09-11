@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
     <artifactId>FINAL_PROJECT_3_Quest</artifactId>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Archetype - FINAL_PROJECT_3_Quest</name>
     <url>http://maven.apache.org</url>
@@ -54,6 +55,17 @@
           <version>1.18.30</version>
       </dependency>
   </dependencies>
+
+    <build>
+        <finalName>FINAL_PROJECT_3_Quest</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
 
