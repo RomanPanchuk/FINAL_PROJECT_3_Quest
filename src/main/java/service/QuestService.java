@@ -45,7 +45,7 @@ public class QuestService {
                 answerMap.put(answer.getId(), answer);
             }
         }
-        // Зв’язування відповідей із запитаннями
+
         for (Question question : questions) {
             String questionId = Long.toString(question.getId());
             for (int i = 1; i <= 2; i++) {
@@ -55,7 +55,7 @@ public class QuestService {
                 }
             }
         }
-        // Пов’язування відповіді з наступним запитанням
+
         for (int i = 0; i < questions.size() - 1; i++) {
             Question question = questions.get(i);
             for (Answer answer : question.getAnswers()) {
@@ -67,7 +67,7 @@ public class QuestService {
                 }
             }
         }
-        // Окреме опрацювання останнього питання
+
         Question lastQuestion = questions.get(questions.size() - 1);
         for (Answer answer : lastQuestion.getAnswers()) {
             if (answer.getId().equals("31")) {
@@ -142,7 +142,7 @@ public class QuestService {
     }
 
     private void handleGameOver(Answer selectedAnswer, HttpSession session, HttpServletRequest request) {
-        // Якщо немає наступного запитання, гру завершено
+
         String gameOverMessage;
         if (selectedAnswer.getId() != null) {
             Map<String, String> gameOverMessages = new HashMap<>();
