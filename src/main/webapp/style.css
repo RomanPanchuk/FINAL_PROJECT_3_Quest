@@ -1,0 +1,62 @@
+.container {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-custom1 {
+    width: 30%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.intro-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.games-played-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.label-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-indent: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-over-message {
+    font-size: 28px;
+    font-style: italic;
+    color: rebeccapurple;
+}
